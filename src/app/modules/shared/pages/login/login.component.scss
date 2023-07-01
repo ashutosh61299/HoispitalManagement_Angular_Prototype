@@ -1,0 +1,64 @@
+// Logo Styling
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+
+  .logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .logo-icon {
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+.login-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  position: relative;
+}
+
+.login-section-left {
+  background-color: #32cfff40;
+  display: flex;
+  flex-direction: column;
+  .illustration {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 60%;
+    }
+  }
+}
+
+.login-box-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.login-box {
+  background: white;
+  padding: 2rem;
+  height: max-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.75);
+  min-width: 25vw;
+  border-radius: 5px;
+}
+mat-form-field {
+  width: 100%;
+  border-radius: 10px;
+}
+.login-form {
+  text-align: end;
+}

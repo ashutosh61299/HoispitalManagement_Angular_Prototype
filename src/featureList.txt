@@ -1,0 +1,8 @@
+**************************************************************************************
+THIS APP CONTAINS THE FOLLOWING FEATURES
+**************************************************************************************
+
+1. Angular Application
+2. Angular Material used in the Application
+3. Forms Validations used.
+4. Reactive Forms used.

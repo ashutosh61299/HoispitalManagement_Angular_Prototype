@@ -1,0 +1,67 @@
+<div class="login-wrapper">
+  <div class="login-section-left">
+    <div class="logo-wrapper">
+      <div class="logo-icon">
+        <img src="../../../../../assets/logo.png" alt="" />
+      </div>
+      <div class="logo-text">Health & Company</div>
+    </div>
+
+    <div class="illustration">
+      <img src="../../../../../assets/illustration.svg" alt="" />
+    </div>
+  </div>
+  <div class="login-section-right"></div>
+  <div class="login-box-wrapper">
+    <div class="login-box">
+      <h3>Login</h3>
+      <br />
+      <form class="login-form" [formGroup]="loginForm">
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input
+            matInput
+            placeholder="Enter Email"
+            width=""
+            formControlName="email"
+          />
+          <mat-error
+            *ngIf="
+              loginForm.controls['email'].touched &&
+              !loginForm.controls['email'].valid
+            "
+          >
+            Email Address is required
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input
+            type="password"
+            matInput
+            placeholder="Enter Password"
+            width=""
+            formControlName="password"
+          />
+          <mat-error
+            *ngIf="
+              loginForm.controls['password'].touched &&
+              !loginForm.controls['password'].valid
+            "
+          >
+            Password is required
+          </mat-error>
+        </mat-form-field>
+        <button
+          mat-raised-button
+          color="primary"
+          class="login-btn"
+          (click)="login($event)"
+          [disabled]="!loginForm.valid"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
